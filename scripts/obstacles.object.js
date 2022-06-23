@@ -16,7 +16,7 @@ export class Obstacles {
 
 	refresh() {
 
-		if (this.everyinterval(2)) {
+		if (this.everyinterval(5)) {
 			let chance = this.randomInt(1, 10);
 			let minIntervalsAppart = this.stage.frames > this.intervalFrameCounter + 15;
 
@@ -54,7 +54,7 @@ export class Obstacles {
 		if(
 			// Fix de collission check!
 			// VERVANG == MET >= OF <=  ("is groter dan of gelijk aan" OF "is kleiner dan of gelijk aan")
-			((pb == ot && pb == ob)	|| (pt == ot && pt == ob)) 
+			((pb == ot && pb == ob)	|| (pt == ot && pt == ob))
 			&&
 			// VERVANG == MET >= OF <=  ("is groter dan of gelijk aan" OF "is kleiner dan of gelijk aan")
 			((pl == ol && pl == or)	|| (pr == ol && pr == or))
